@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>中医养生网查疾病_疾病大全_疾病查询</title>
+        <meta name="keywords" content="疾病信息，疾病大全，疾病症状" />
+        <meta name="description" content="中医养生网食物信息库为您解惑" />
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1.0" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+        <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+        <meta content="telephone=no" name="format-detection" />
+		<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/my-base.css">
+        <link rel="stylesheet" href="../css/zt-Cdisease.css?v=20160521">
+		<link href="../css/m_reset.css" rel="stylesheet"/>
+		<link href="../css/ques.css" rel="stylesheet"/>
+		<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+        <script type="text/javascript" src="../js/head.js"></script>
+        <script type="text/javascript" src="../js/pos.js?n=201510271045"></script>
+		<script src="../lib/jquery.min.js"></script>
+		<script src="../bootstrap/js/bootstrap.min.js"></script>
+		<style>
+	.wrap{overflow:hidden;}
+.comments {  width:100%;
+ overflow:auto;  
+ word-break:break-all; }
+</style>
+    </head>
+    <body> 
+        <script type="text/javascript" src="../js/odm.js"></script>
+<script type="text/javascript" src="../js/word.js"></script>
+<header class="header header-link" style="">
+        <div class="header-wrap">
+            <a href="../indexmobile.html" onmousedown="clicktest(this);__sendClickOdm('3g_club_ask_question', this, 'dcpage:xywy+');" clicktype="3g_xywy_club" clicken="3g_club_xywy_com_xywy">返回首页</a>
+        </div>
+<script type="text/javascript">
+    var domain = "http://3g.jib.xywy.com"
+    startTime  = new Date().getMilliseconds() ;
+    function getCookieIndex(c_name)
+        {
+            if (document.cookie.length>0)
+            {
+                    c_start=document.cookie.indexOf(c_name + "=");
+                    if (c_start!=-1)
+                    {
+                            c_start=c_start + c_name.length+1;
+                            c_end=document.cookie.indexOf(";",c_start);
+                            if (c_end==-1) c_end=document.cookie.length
+                            return unescape(document.cookie.substring(c_start,c_end));
+                    } 
+            }
+            return null;
+        }
+        function SetCookieIndex(c_name,value,expiredays)
+        {
+                var exdate = new Date();
+                exdate.setDate(exdate.getDate() + expiredays);
+                document.cookie = c_name + "=" +escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString()); //使设置的有效时间正确。增加toGMTString()
+        }
+
+             
+        var islogin = false;
+        var username = '';
+        username = getCookieIndex('cookie_username');
+        if(username != '' && username != null)
+        {
+                islogin = true;
+        }
+        //提示判断
+        var isShowInfo = false;
+        var showInfoName = getCookieIndex('cookie_showinfoname');
+        if(showInfoName != '' && showInfoName != null)
+        {
+                isShowInfo = true;
+        }
+        function hiddenInfo(obj)
+        {
+                obj.style.display = "none";
+                SetCookieIndex('cookie_showinfoname','true','300');
+        }
+        document.addEventListener("touchstart", function() {
+                return false;
+       }, true);
+</script>
+</header>
+<script type="text/javascript" src="../lib/zepto.min.js"></script>	
+
+<div class="container">
+    <form action="./symptoms.html?" class="form-horizontal"  role="form">
+    <div>
+		<label for="name">日常饮食</label>
+<div>
+   <label class="checkbox-inline">
+   <span>
+      <input type="checkbox" id="inlineCheckbox1" value="option1">腹胀积食
+	  </span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox2" value="option2">吃饭不香</span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox3" value="option3">便秘堵塞</span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox2" value="option4">手脚冰凉</span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox3" value="option5">胸闷头晕</span>
+   </label>
+   </div>
+   <div>
+   <label class="checkbox-inline">
+   <span>
+      <input type="checkbox" id="inlineCheckbox1" value="option1">失眠多梦
+	</span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox2" value="option2">呼吸气短</span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox3" value="option3">心慌烦躁</span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox2" value="option4">皮肤干燥</span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox3" value="option5">脸萎黄或无光泽</span>
+   </label>
+   </div>
+</div>
+<div class="j-navico bgf8"><span></span></div>
+<div>
+		<label for="name">生活习惯</label>
+<div>
+   <label class="checkbox-inline">
+   <span>
+      <input type="checkbox" id="inlineCheckbox1" value="option1">思虑过度
+	  </span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox2" value="option2">熬夜过度</span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox3" value="option3">常吃冷饮</span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox2" value="option4">饮酒过度</span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox3" value="option5">压力过大</span>
+   </label>
+   </div>
+<div>
+   <label class="checkbox-inline">
+   <span>
+      <input type="checkbox" id="inlineCheckbox1" value="option1">常吃蔬菜
+	  </span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox2" value="option2">常吹空调</span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox3" value="option3">常吃水果</span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox2" value="option4">忍饥耐饿</span>
+   </label>
+   <label class="checkbox-inline">
+      <span><input type="checkbox" id="inlineCheckbox3" value="option5">经常使用电热毯</span>
+   </label>
+   </div>
+<div class="j-navico bgf8"><span></span></div>
+</div>
+
+    </form>
+</div>
+
+	<div class="sec-items">
+            			<div class="sec-btn">
+				<input  onmousedown="__sendClickOdm('3g_club_ask_question', this, 'askquestion:Submit_questions+');" type="submit" class="sec-submit" value="看人吃饭"/>
+			</div>
+			<script src="http://xianxia.club.xywy.com/detip.php"></script>
+			<script type="text/javascript">
+				document.getElementById('qip').value = qips;
+			</script>
+		</form>
+		<div>
+<label>以下是专家给出的建议：</label>
+</div>
+<div>
+			<textarea class="comments" id="displayarea" disabled="disabled" rows="5" cols="30"></textarea>
+			</div>
+        <script type="text/javascript">
+            __sendVisitOdm("3g_club_ask_question", "askquestion:Submit_questions+");
+        </script>
+	</div>                
+
+    
+ <div style="display: none;">
+<script type="text/javascript" src="../js/a.js"></script>
+<script type="text/javascript" src="../js/click.js"></script>
+</div>
+<footer id="footers">
+    <div class="line"></div>
+    <p>
+        <script type="text/javascript">
+              if(islogin === true)  {
+                  document.writeln('<a href="http://3g.i.xywy.com/user/index">我的咨询</a><span>|</span><a href="http://3g.i.xywy.com/user/index">我的预约</a>') ;
+             } else {
+                  document.writeln('<a href="./login.html">登录</a><span>|</span><a href="./register.html">注册</a>') ;
+              }
+       </script> 
+    </p>
+	
+    <p><a href="javascript:;">触屏版</a><span>|</span><a class="col" href="http://www.xywy.com?vt=1">电脑版</a><span>|</span>
+        
+    <p>参考信息不作为诊断医疗数据</p>		
+    <p>版权所有:中医养生网(2002-2016)</p>	
+</footer>
+<script>
+if(/AlipayClient/i.test(navigator.userAgent)){
+    $('.jib3g_ad').hide() ;
+    $('.applink').hide() ;
+    $('#head').hide() ;
+    $('#footers').hide() ;
+    $('#BAIDU_DUP_wrapper_u1349317_0').hide() ;
+    $('#bddiv').hide() ;
+}
+</script>
+
+    </body>
+    <script type="text/javascript">
+        $(".zt-jbfl").on("click" , function () {
+          var accesskey =  $(this).attr("accesskey") ;
+          $(this).toggleClass('borb');
+          $(this).find(".xllb").toggleClass("on") ;
+          $("#" + accesskey).toggle();
+        }) ;
+    </script>
+</html>
