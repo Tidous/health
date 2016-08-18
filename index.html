@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>中医养生网</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta content="black" name="apple-mobile-web-app-status-bar-style" />
     <meta content="telephone=no" name="format-detection" />
@@ -17,6 +18,13 @@
 	<script type="text/javascript" src="js/config.js"></script>
     <script type="text/javascript" src="js/global.js"></script>
 	<script type="text/javascript">
+	var lang = navigator.language
+	boolean isEnglish = false;
+	if(lang == "zh-CN"){
+		isEnglish = false;
+	}else{
+		isEnglish = true;
+	}
 　　<!--
 　　//平台、设备和操作系统
 　　var system = {
@@ -33,9 +41,13 @@
 　　system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false;
 　　//跳转语句，如果是手机访问就自动跳转到" "里的页面
 　　if (system.win || system.mac || system.xll||system.ipad) {
-　　
+　　	if(isEnglish){
+			window.location.href = "./indexen.html";
+		}
 　　} else {
-　　
+　　	if(isEnglish){
+			window.location.href = "./indexenmobile.html";
+		}
 　　window.location.href = "./indexmobile.html";
 　　}
 　　-->

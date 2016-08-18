@@ -4,6 +4,7 @@
     <head> 
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <title>用户中心_中医养生网</title>
         <meta name="description" content=""/> 
@@ -18,12 +19,9 @@
 	<link rel="stylesheet" href="../css/my-base.css">
     <!--<![endif]-->
         <script type="text/javascript" src="../js/common.js"></script>
-		<style>
-.one{ width:600px; height:100px; margin:0 auto;}
-</style>
 </head>
 <body>
-<div class="one">
+
     <div class="w">
          <script src="../lib/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -32,12 +30,17 @@
 </script>
 <script src="../js/click.js" type="text/javascript"></script>
 <style>
-.clubmenu{ background:url(http://static.img.xywy.com/3g_club/images/mebtn.png) no-repeat center 4px;-webkit-background-size:19px auto; background-size:19px auto; border:1px solid #fff;-webkit-border-radius:0px 3px 3px 0px;border-radius:0px 3px 3px 0px; width:48px; height:29px;}
+.wrap{overflow:hidden;}
+		.one{ width:600px; height:100px; margin:0 auto;}
+		.comments {  width:100%;
+		 overflow:auto;  
+		 word-break:break-all; }
+.clubmenu{ background:url(../images/mebtn.png) no-repeat center 4px;-webkit-background-size:19px auto; background-size:19px auto; border:1px solid #fff;-webkit-border-radius:0px 3px 3px 0px;border-radius:0px 3px 3px 0px; width:48px; height:29px;}
 .col04a{ color:#04aabd;}
 </style>
 <header id="iheader">
       <div class="header_new fWei pr">
-         <span class="col04a f16 pl10 " style="line-height:47px;"><a onmousedown="clicktest(this)" clicktype="3g_xywy_user" clicken="3g_i_xywy_com_xywy" href="../index.html"  class="col04a" >中医养生网</a> · <a onmousedown="clicktest(this)" clicktype="3g_xywy_user" clicken="3g_i_xywy_com_user"  href="./user.html"  class="col04a" >个人中心</a></span>
+         <span class="col04a f16 pl10 " style="line-height:47px;"><a onmousedown="clicktest(this)" clicktype="3g_xywy_user" clicken="3g_i_xywy_com_xywy" href="../indexmobile.html"  class="col04a" >中医养生网</a> · <a onmousedown="clicktest(this)" clicktype="3g_xywy_user" clicken="3g_i_xywy_com_user"  href="./user.html"  class="col04a" >个人中心</a></span>
         <div class="fr dib headfr">
         <a href="./user.html" class="dib t9999 clubmenu" style="border-radius:3px;">个人中心</a>
         </div>
@@ -99,6 +102,34 @@
                 	
             </div>
 
+			<div class="myFamilyDoctor">
+                <h2  >
+                    <a name="myphonedoctor"></a>
+                    <div class="dib fl my_userglbg" clicken="3g_health_wdjkgl" onmousedown="clicktest(this);
+                            __sendClickOdm('3g_ucenter', this, 'shouye:3g_health_wdjkgl+')" clicktype="3g_health">
+                        我的家人管理<i class="ml10 fn coliyel">(0)</i>
+                    </div>
+                    <span class="dib fr userbg">
+                    </span>
+                </h2>
+
+                <div class="myphonedoctor" style="display:none;">
+                    <div  id="datalist_myhealthmanager">
+
+                            <div class="familyDoctor nonefamilyDoctor " >
+                                <div>
+                                    <div class="F-cont noneDoctorCont">
+                                        <div class="noneDoctor">
+                                            <p class="f14">暂无相关家人资料</p>
+                                            <p><a href="./userdoc.html" >去关联家人</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+                                    </div>
+            </div>
+			
             <!--健康管理 2015-02-02 start-->				
             <div class="myFamilyDoctor">
                 <h2  >
@@ -247,7 +278,6 @@
 	<!--<div style="display:none;">
 	    <script src='http://w.cnzz.com/c.php?id=1252962823&l=3' language='JavaScript'></script>
 	</div>-->
-	</div>
 </body>
 </html>
  <script>
