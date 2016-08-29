@@ -93,6 +93,7 @@
             var user = obj.username;
             if (res == "1") {
                 sessionStorage.setItem("user",user);
+                sessionStorage.setItem("userid",obj.userid);
                 window.location="../index.html";
             }
             else if(res == "0") {
