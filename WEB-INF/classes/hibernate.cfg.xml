@@ -6,9 +6,7 @@
 <hibernate-configuration>
 	<session-factory>
 
-		<property name="dialect">
-			org.hibernate.dialect.OracleDialect
-		</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="jdbc.batch_size">20</property>
 		<property name="connection.autocommit">true</property>
 
@@ -33,15 +31,6 @@
 		<!-- 
 			<mapping resource="hib/sql/hbm/CustSel.hbm.xml" />
 			<mapping class="hib.sql.entity.CustSel" />-->
-
-
-		<mapping class="hib.ora.entity.Applogin" />
-		<mapping class="hib.ora.entity.Tappcommonmsg" />
-		<mapping class="hib.ora.entity.Tapppersonalmsg" />
-		<mapping resource="hib/ora/dao/Applogin.hbm.xml" />
-		<mapping class="hib.ora.dao.Applogin" />
-
-
 
 	</session-factory>
 </hibernate-configuration>
