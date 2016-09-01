@@ -11,7 +11,6 @@
     <meta name="description" content="手机中医养生网3g版 - xywy.com"/>
     <meta name="keywords" content="手机中医养生网,中医养生网首页,手机中医养生网3g版"/>
     <div style="display:none;"></div>
-    <script type="text/javascript" src="./js/t.js"></script>
 	<link rel="stylesheet" href="./css/my-base.css">
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="./css/m_reset.css" rel="stylesheet"/>
@@ -19,24 +18,18 @@
     <style>
         .wrap{overflow:hidden;}
     </style>
-    <script type="text/javascript" src="./lib/jquery.min.js"></script>
-	<script type="text/javascript" src="./pagespc/js/config.js"></script>
-	<script type="text/javascript" src="./pagespc/js/global.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/global.js"></script>
 	<script type="text/javascript">
+	var pageno = "0";
+	var pagesize = "10";
 	function querytable() {
-       
-    }
-
-    function createtable() {
-       
-    }
-
-    function deletetable() {
-       
-    }
-
-    function querytable() {
-
+	    var table = document.getElementById('selectpicker').value;
+	    $.doAjaxPostCall("dbadminquery", "table="+table+"&pageno="+pageno+"&pagesize="+pagesize, function(responseData){
+	           
+               var obj =responseData;
+	    });
     }
 	</script>
 </head>
@@ -70,20 +63,17 @@
 </div>
    <!--  <p>请输入sql语句（建议有sql相关经验的人员使用）</p> -->
    </div>
-   <form role="form" style="padding-left:10px">
+   <form style="padding-left:10px">
    <!--<div class="form-group">
       <input type="text" class="form-control" id="name" 
          placeholder="请输入sql">
    </div>-->
-   <button type="submit" class="btn btn-default" onclick="querytable()">查询</button>
-   <button type="submit" class="btn btn-default" onclick="createtable()">新增</button>
+   <button class="btn btn-default" onclick="querytable()">查询</button>
+   <button class="btn btn-default" onclick="createtable()">新增</button>
    </form>
 
 <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="./dist/bootstrap-table.min.css" rel="stylesheet" type="text/css">
-<script src="./bootstrap/js/bootstrap.min.js"></script>
-<script src="./dist/bootstrap-table.min.js"></script>
-<script src="./dist/locale/bootstrap-table-zh-CN.js"></script> 
 
 <table class="table table-hover" id="cusTable"
        data-pagination="true"

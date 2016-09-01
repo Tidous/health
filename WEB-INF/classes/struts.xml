@@ -122,6 +122,13 @@
 				<param name="callbackParameter">callback</param>
 			</result>
 		</action>
+		
+		<action name="dbadminquery" class="action.query.QueryDBAdminAction"
+			method="query">
+			<result name="success" type="json">
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
 
 	</package>
 
